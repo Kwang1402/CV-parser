@@ -1,6 +1,15 @@
 import os
 from preprocess import ResumeProcessor
 
+'''
+Input: 
+Path of parent folder contains subfolders including PDFs
+Path of output folder
+
+Output:
+Folder(contains subfolders) of text files converted from PDF files
+'''
+
 MAIN_PDF_FOLDER = "D:\datasets\cvs_data"
 OUTPUT_FOLDER = "D:\datasets\cvs_data_text"
 
@@ -33,7 +42,6 @@ def generate_text_folder(pdf_folder, output_folder):
                 except Exception as e:
                     print(f"❌ Error processing {pdf_path}: {e}")
 
-# Run the batch processing
 generate_text_folder(MAIN_PDF_FOLDER, OUTPUT_FOLDER)
 
 print("✅ All PDFs processed successfully!")

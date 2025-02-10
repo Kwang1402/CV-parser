@@ -12,6 +12,14 @@ from nltk.stem import WordNetLemmatizer
 # nltk.download("stopwords")
 # nltk.download("wordnet")
 
+'''
+Input: 
+PDF path
+
+Output:
+Text
+'''
+
 class ResumeProcessor:
     def __init__(self, tesseract_path=None):
         if tesseract_path:
