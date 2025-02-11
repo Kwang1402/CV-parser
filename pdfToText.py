@@ -1,4 +1,5 @@
 import os
+import json
 from preprocess import ResumeProcessor
 
 '''
@@ -9,14 +10,17 @@ Path of output folder
 Output:
 Folder(contains subfolders) of text files converted from PDF files
 '''
+with open("config.json", "r") as config_file:
+    config = json.load(config_file)
+tesseract_path = config.get("tesseract_path", "tesseract")
+processor = ResumeProcessor(tesseract_path=tesseract_path)
 
-MAIN_PDF_FOLDER = "D:\datasets\cvs_data"
-OUTPUT_FOLDER = "D:\datasets\cvs_data_text"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MAIN_PDF_FOLDER = os.path.join(BASE_DIR,"cvs_data")
+OUTPUT_FOLDER = os.path.join(BASE_DIR,"cvs_data_text")
 
 if not os.path.exists(OUTPUT_FOLDER):
     os.makedirs(OUTPUT_FOLDER)
-
-processor = ResumeProcessor(tesseract_path=r"C:\Program Files\Tesseract-OCR\tesseract.exe")  # Update path if needed
 
 def generate_text_folder(pdf_folder, output_folder):
     for root, _, files in os.walk(pdf_folder):
@@ -31,17 +35,17 @@ def generate_text_folder(pdf_folder, output_folder):
                 txt_filename = os.path.splitext(filename)[0] + ".txt"  # Change extension to .txt
                 txt_path = os.path.join(output_subfolder, txt_filename)
 
-                print(f"📄 Processing: {pdf_path}...")
+                print(f"Processing: {pdf_path}...")
 
                 try:
                     extracted_text = processor.process_resume(pdf_path)  # Extract text
                     with open(txt_path, "w", encoding="utf-8") as f:
                         f.write(extracted_text)  # Save text to file
                     
-                    print(f"✅ Saved: {txt_path}")
+                    print(f"Saved: {txt_path}")
                 except Exception as e:
-                    print(f"❌ Error processing {pdf_path}: {e}")
+                    print(f"Error processing {pdf_path}: {e}")
 
-generate_text_folder(MAIN_PDF_FOLDER, OUTPUT_FOLDER)
+#generate_text_folder(MAIN_PDF_FOLDER, OUTPUT_FOLDER)
 
-print("✅ All PDFs processed successfully!")
+print("All PDFs processed successfully!")

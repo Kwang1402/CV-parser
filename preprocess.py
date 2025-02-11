@@ -9,8 +9,8 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 '''just need download once'''
-# nltk.download("stopwords")
-# nltk.download("wordnet")
+nltk.download("stopwords")
+nltk.download("wordnet")
 
 '''
 Input: 
