@@ -1,4 +1,5 @@
 import os
+import json
 from preprocess import ResumeProcessor
 
 '''
@@ -9,6 +10,10 @@ Path of output folder
 Output:
 Folder(contains subfolders) of text files converted from PDF files
 '''
+with open("config.json", "r") as config_file:
+    config = json.load(config_file)
+tesseract_path = config.get("tesseract_path", "tesseract")
+processor = ResumeProcessor(tesseract_path=tesseract_path)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MAIN_PDF_FOLDER = os.path.join(BASE_DIR,"cvs_data")
@@ -16,8 +21,6 @@ OUTPUT_FOLDER = os.path.join(BASE_DIR,"cvs_data_text")
 
 if not os.path.exists(OUTPUT_FOLDER):
     os.makedirs(OUTPUT_FOLDER)
-
-processor = ResumeProcessor(tesseract_path=r"C:\Program Files\Tesseract-OCR\tesseract.exe")  # Update path if needed
 
 def generate_text_folder(pdf_folder, output_folder):
     for root, _, files in os.walk(pdf_folder):
