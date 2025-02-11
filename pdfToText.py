@@ -9,6 +9,7 @@ Path of output folder
 Output:
 Folder(contains subfolders) of text files converted from PDF files
 '''
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MAIN_PDF_FOLDER = os.path.join(BASE_DIR,"cvs_data")
 OUTPUT_FOLDER = os.path.join(BASE_DIR,"cvs_data_text")
@@ -44,4 +45,4 @@ def generate_text_folder(pdf_folder, output_folder):
 
 #generate_text_folder(MAIN_PDF_FOLDER, OUTPUT_FOLDER)
 
-print("✅ All PDFs processed successfully!")
+print("All PDFs processed successfully!")
