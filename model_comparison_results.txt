@@ -1,0 +1,239 @@
+=== Model Evaluation Results ===
+
+Trained Model Stats:
+{
+    "precision": 0.7235738689305311,
+    "recall": 0.6910678971654581,
+    "f1_score": 0.7069474181094795
+}
+
+Pre-trained Model Stats:
+{
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0
+}
+
+Sample Predictions from Trained Model (First 5 Samples):
+
+Text: ENGINEERING SUPERVISOR Summary Tama Mechanical Engineer 8 year product design experience emphasis non metallic material used oil field related equipment well year HVAC experience Proficient CAD FEA so...
+Entities:
+8 year - DATE
+ISO - ORG
+Bluehill - ORG
+Solidworks Algore - ORG
+Matlab Microsoft Office - ORG
+ISO 9001 - ORG
+Design - PRODUCT
+Ansys LabView - PERSON
+June 2010 - DATE
+33 million - CARDINAL
+AccuSeal - ORG
+ISO 9001 - ORG
+ASTM - ORG
+Develop - ORG
+PTFE - ORG
+Oversaw - GPE
+HPHT - ORG
+June 2007 - DATE
+June 2010 - DATE
+Engineer City State - GPE
+200 million - CARDINAL
+Preformed - ORG
+Created - ORG
+Energy Testing Balance Austin TX Testing - ORG
+August 2006 - DATE
+May 2007 - DATE
+Texas Performed - ORG
+AMD - ORG
+weekly - DATE
+Texas - GPE
+5 2006 - DATE
+BS Mechanical Engineering City State Mechanical Engineering FE - ORG
+Texas - GPE
+4 2010 - DATE
+Ansys API - PERSON
+Matlab - NORP
+Microsoft Office - ORG
+Process Engineering - ORG
+QA - ORG
+Solidworks - ORG
+
+Text: SENIOR TECHNICAL DESIGNER Summary Product Developer Technical Designer strength apparel handbag jewelry extensive knowledge material manufacturing quality assurance Dynamic product engineer highly ski...
+Entities:
+Skills Adobe - PERSON
+Fit Assessment Product Development Technical Direction Line Product Review Flat Pattern Making Corrections Garment Construction Draping Accomplishments Events Networking Pillar Lead - ORG
+LGBTA Business Council - ORG
+Target - ORG
+Target Experience Senior Technical - ORG
+03 2017 - DATE
+11 2013 - DATE
+02 2016 - DATE
+Company Name City State Responsible - DATE
+TD Children - ORG
+Women Jewelry Handbags - ORG
+Creation - ORG
+Execute - ORG
+Establish - NORP
+Manage - PRODUCT
+Identify - ORG
+CTM - ORG
+Manage - PRODUCT
+2 - CARDINAL
+06 2011 11 2013 - DATE
+Creation - ORG
+Execute - ORG
+Establish - NORP
+Manage - PRODUCT
+Technical - ORG
+03 2009 - DATE
+06 2011 Company Name City State Resnonsible - DATE
+Creation - ORG
+Establish - NORP
+Associate Technical - ORG
+02 2006 - DATE
+03 2009 - DATE
+Collaborated - ORG
+Illustrator - ORG
+Excel - PRODUCT
+Microsoft - ORG
+Quality Assurance - ORG
+
+Text: GENERAL CONSTRUCTION WORKER Summary hardworking year experience industry worksite Resourcefill experience handling material operating machinery supporting overall team project need depth knowledge com...
+Entities:
+Singularly - PERSON
+Efficient - PERSON
+Skills Hand - ORG
+Problemresolution Basic - ORG
+Collaboration Safety - ORG
+Forklift - ORG
+Organizational - ORG
+Maintenance Repair Leadership Troubleshooting Experience Company Name City State General Construction - ORG
+12 2020 - DATE
+Maintained - GPE
+Name City State Quality Inspector - GPE
+10 2017 11 2020 - DATE
+Marked - NORP
+Notified - ORG
+Completed - ORG
+Forklift - ORG
+Maintained - GPE
+Cut - ORG
+Cold - PERSON
+OSHA - ORG
+Name City State - GPE
+09 2016 - DATE
+Assisted - ORG
+Processed - GPE
+Promoted - ORG
+Monitored - ORG
+Maintained - GPE
+Assisted - ORG
+Processed - GPE
+Assisted - ORG
+Completed - ORG
+daily - DATE
+Welcomed - ORG
+Name City State - GPE
+06 2015 - DATE
+09 2016 - DATE
+Prepared - PERSON
+Assisted - ORG
+Organized - ORG
+Assisted - ORG
+OSHA - ORG
+Maintained - GPE
+06 2016 2015 2016 - DATE
+Gulf Breeze High School City State - ORG
+2013 2015 - DATE
+Citi City Level 1 Heavy Equipment Repair Operation Diploma Heavy Equipment Operations - ORG
+06 2016 - DATE
+Certifications Forklift - ORG
+Truck - PERSON
+OSHA - ORG
+10 hour - TIME
+
+Text: SENIOR PRODUCT DESIGNER Professional Summary proven experienced product designer involved every phase product design cycle initial concept post production 1 cost reduce product expand existing product...
+Entities:
+1 - CARDINAL
+Skills - ORG
+Solid Works - PERSON
+Company Lome Technical - ORG
+Microsofl Otice - ORG
+Tong - GPE
+Silk - PERSON
+April 1984 - DATE
+Developed - ORG
+Created - ORG
+Coordinated - ORG
+Coordinated - ORG
+Created - ORG
+Created - ORG
+Created - ORG
+Promoted - ORG
+Draftsman Layout Estimating - WORK_OF_ART
+January 1983 April 1984 - DATE
+Layout - GPE
+Calculate - ORG
+Education Williamsport Area Community College - ORG
+1979 - DATE
+GPA - ORG
+3 2 - CARDINAL
+1977 - DATE
+Graduate Academic Courses - ORG
+National Honor Society Varsity Wrestling Cross Country Baseball Rotary - ORG
+Keystone Central Technical Advisory Committee Little League Baseball - ORG
+Auxiliary Empfield Enterprises Graphic Design - ORG
+Penn College Technology Part - ORG
+Administrative Council - ORG
+Civic Avis Recreation Association - PERSON
+Keystone Central Technical Advisory Committee Little League Baseball - ORG
+Auxiliary Empfield Enterprises Graphic Design - ORG
+Penn College Technology Part - ORG
+Brochure - ORG
+Mechanical Works Modeling - ORG
+Additional Information - ORG
+National Honor Society Varsity Wrestling Cross Country Baseball Rotary - ORG
+Administrative Council - ORG
+
+Text: SALES MANAGER Professional Summary Accomplished energeticA solid history achievement sale Motivated leader strong organizational prioritization abil Selling Customer Needs Interests Music Production G...
+Entities:
+4 - CARDINAL
+01 2010 - DATE
+Name iV4 City State Areas - GPE
+Meeting Goals Negotiation Resolve - ORG
+Direct - ORG
+Pknand - ORG
+Determine - PERSON
+Conf - ORG
+Review - ORG
+Advise - PRODUCT
+Cont - ORG
+Direct - ORG
+07 2007 - DATE
+03 2010 - DATE
+1 - CARDINAL
+Raise - PERSON
+Unbolt - ORG
+Hammer - ORG
+Glue - ORG
+Prepare - ORG
+Assist - NORP
+Inflate - ORG
+03 2005 - DATE
+09 2007 - DATE
+Whoksale Food Supplier Company Name City State Sell - ORG
+three ton - QUANTITY
+Prepare - ORG
+Cut - PERSON
+Cutand - PERSON
+Conf - ORG
+Prepare - ORG
+Purchase - PERSON
+Negotiate - ORG
+Drive - ORG
+Write - ORG
+Listen - ORG
+2012 - DATE
+City State Additional Information ActivitieeA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAA AAA AA - ORG
+Conmmilty Service - ORG
